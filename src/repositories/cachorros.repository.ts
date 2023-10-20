@@ -22,7 +22,7 @@ export class CachorrosRepository {
 
   list = async () => await AnimalB.find({  });
 
-  update = (id: string, cachorro: Cachorro) => {
+  update = (id: string, cachorro: Cachorro) : any => {
     return null;
   };
   remove = (id: string) =>
