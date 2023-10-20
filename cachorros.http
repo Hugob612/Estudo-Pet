@@ -1,0 +1,35 @@
+GET http://localhost:3333/animais
+
+###
+GET http://localhost:3333/animais/cachorros
+
+###
+
+POST http://localhost:3333/animais/cachorros HTTP/1.1
+content-type: application/json
+
+{
+      "vacinas": [ ],
+      "banhos": [],
+      "name": "Luna ddd",
+      "race": "Pastor da mantiqueira",
+      "birthdate": "06/06/2022",
+      "gender": "Fêmea",
+      "owner": "Daniel",
+      "address": "Rua João Capistrano marques, 46"
+    }
+
+
+###
+PUT http://localhost:3333/animais/cachorros/8194edfb-20cf-4956-a55c-47265f016828 HTTP/1.1
+content-type: application/json
+
+    {
+      "name": "LunaTeste",
+      "race": "Pastor da maniqueira",
+      "birthdate": "06/06/2022",
+      "gender": "Fêmea",
+      "owner": "Leleca",
+      "address": "Rua João Capistrano marques, 46"
+    }
+    

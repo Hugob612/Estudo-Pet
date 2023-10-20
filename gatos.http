@@ -1,0 +1,40 @@
+GET http://localhost:3333/animais
+
+###
+GET http://localhost:3333/animais/gatos
+
+###
+GET http://localhost:3333/animais/gatos/8194edfb-20cf-4956-a55c-47265f016828
+
+###
+POST http://localhost:3333/animais/gatos HTTP/1.1
+content-type: application/json
+
+{
+      "vacinas": [],
+      "banhos": [],
+      "name": "Garfield",
+      "race": "Persa",
+      "birthdate": "06/06/2022",
+      "gender": "Macho",
+      "owner": "Victor",
+      "address": "Rua José Pinto Fernandes, 45"
+    }
+
+###
+PUT http://localhost:3333/animais/gatos/8194edfb-20cf-4956-a55c-47265f016828 HTTP/1.1
+content-type: application/json
+
+{
+
+      "name": "Garfield",
+      "race": "Persa",
+      "birthdate": "06/06/2022",
+      "gender": "Macho",
+      "owner": "Victor",
+      "address": "Rua José Pinto Fernandes, 45"
+    }
+
+###
+DELETE http://localhost:3333/animais/gatos/8194edfb-20cf-4956-a55c-47265f016828 HTTP/1.1
+content-type: application/json
